@@ -1,8 +1,4 @@
-# Reading Comprehension App
-
-An interactive reading comprehension quiz application with AI-powered feedback and cursor tracking analytics. This app helps students improve their reading comprehension skills by analyzing their reading behavior patterns and providing personalized, actionable feedback.
-
-The original design is available at [Figma](https://www.figma.com/design/KIRnobZJKIG7X1QQS8LVAV/Reading-Comprehension-App).
+# Documentation and deployment guide
 
 ## Features
 
@@ -260,8 +256,7 @@ Provides AI-powered personalized feedback:
 
 #### `getPersonalizedQuestionFeedback()`
 Provides question-specific feedback based on reading behavior:
-- **Input**: Screenshot with heatmap overlay + passage text + question/answers
-- **Note**: Cursor coordinate data is NOT sent to Gemini (only visual heatmap)
+- **Input**: Screenshot with heatmap overlay + sentence-level reading behviour summary + passage text + question/answers
 - Analyzes which sections were actually read based on heatmap visualization
 - Connects reading behavior to answer correctness
 - For correct answers: Validates they read the relevant sections
@@ -613,11 +608,3 @@ Each passage tests different comprehension skills including:
 - Main idea identification
 - Detail comprehension
 - Author's purpose and tone
-
-## Contributing
-
-This project is part of the DD2730 course at KTH Royal Institute of Technology. For course-related questions or issues, please contact the course instructors.
-
-## License
-
-This project is part of DM2730 (Technology Enhanced Learning)[https://www.kth.se/student/kurser/kurs/DM2730?l=en] at KTH Royal Institute of Technology.
